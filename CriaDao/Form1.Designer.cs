@@ -35,20 +35,22 @@
             this.textBox_parameter = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox_cmd = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxColuns
             // 
-            this.textBoxColuns.Location = new System.Drawing.Point(12, 43);
+            this.textBoxColuns.Location = new System.Drawing.Point(12, 27);
             this.textBoxColuns.Multiline = true;
             this.textBoxColuns.Name = "textBoxColuns";
-            this.textBoxColuns.Size = new System.Drawing.Size(202, 327);
+            this.textBoxColuns.Size = new System.Drawing.Size(202, 318);
             this.textBoxColuns.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 15);
             this.label1.TabIndex = 1;
@@ -73,10 +75,10 @@
             // 
             // textBox_parameter
             // 
-            this.textBox_parameter.Location = new System.Drawing.Point(220, 43);
+            this.textBox_parameter.Location = new System.Drawing.Point(220, 27);
             this.textBox_parameter.Multiline = true;
             this.textBox_parameter.Name = "textBox_parameter";
-            this.textBox_parameter.Size = new System.Drawing.Size(374, 356);
+            this.textBox_parameter.Size = new System.Drawing.Size(374, 372);
             this.textBox_parameter.TabIndex = 4;
             // 
             // label2
@@ -91,17 +93,36 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(220, 25);
+            this.label3.Location = new System.Drawing.Point(220, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Parameter";
+            // 
+            // textBox_cmd
+            // 
+            this.textBox_cmd.Location = new System.Drawing.Point(107, 351);
+            this.textBox_cmd.Name = "textBox_cmd";
+            this.textBox_cmd.Size = new System.Drawing.Size(107, 23);
+            this.textBox_cmd.TabIndex = 7;
+            this.textBox_cmd.Text = "cmd";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 354);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Sqlcommand";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox_cmd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_parameter);
@@ -125,5 +146,7 @@
         private TextBox textBox_parameter;
         private Label label2;
         private Label label3;
+        private TextBox textBox_cmd;
+        private Label label4;
     }
 }

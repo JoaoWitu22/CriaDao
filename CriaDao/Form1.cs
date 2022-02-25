@@ -9,6 +9,7 @@ namespace CriaDao
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string cmd = textBox_cmd.Text;
             textBox_Head.Text = "";
             textBox_parameter.Text = "";
             string[]coluns = textBoxColuns.Text.Split(new Char[] {',', '.', '-', '\n', '\t' });
@@ -16,11 +17,9 @@ namespace CriaDao
                 foreach (string col in coluns)
             {
                 col.Replace(" ", "");
-                textBox_parameter.Text = textBox_parameter.Text + "cmd.Parameters.AddWithValue(\"@" + col + "\", " + col + ");\n";
+                textBox_parameter.Text = textBox_parameter.Text + cmd +".Parameters.AddWithValue(\"@" + col + "\", " + col + ");\n";
                 textBox_Head.Text = textBox_Head.Text + "string " + col + ", ";
             }
-                
-            
-        } 
+        }
     }
 }
