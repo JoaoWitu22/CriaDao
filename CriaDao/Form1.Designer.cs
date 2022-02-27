@@ -45,6 +45,8 @@
             this.textBox_table = new System.Windows.Forms.TextBox();
             this.Reader = new System.Windows.Forms.Label();
             this.textBox_reader = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox_Class = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxColuns
@@ -86,7 +88,7 @@
             this.textBox_parameter.Location = new System.Drawing.Point(220, 27);
             this.textBox_parameter.Multiline = true;
             this.textBox_parameter.Name = "textBox_parameter";
-            this.textBox_parameter.Size = new System.Drawing.Size(391, 372);
+            this.textBox_parameter.Size = new System.Drawing.Size(391, 347);
             this.textBox_parameter.TabIndex = 4;
             // 
             // label2
@@ -191,11 +193,29 @@
             this.textBox_reader.Size = new System.Drawing.Size(225, 372);
             this.textBox_reader.TabIndex = 15;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(224, 379);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 15);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Class";
+            // 
+            // textBox_Class
+            // 
+            this.textBox_Class.Location = new System.Drawing.Point(264, 376);
+            this.textBox_Class.Name = "textBox_Class";
+            this.textBox_Class.Size = new System.Drawing.Size(107, 23);
+            this.textBox_Class.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1308, 453);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox_Class);
             this.Controls.Add(this.Reader);
             this.Controls.Add(this.textBox_reader);
             this.Controls.Add(this.label7);
@@ -239,5 +259,7 @@
         private TextBox textBox_table;
         private Label Reader;
         private TextBox textBox_reader;
+        private Label label8;
+        private TextBox textBox_Class;
     }
 }

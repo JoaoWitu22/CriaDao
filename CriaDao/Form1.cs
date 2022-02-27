@@ -17,10 +17,12 @@ namespace CriaDao
             string insert = "INSERT INTO " + textBox_table.Text + " (";
             string values = "";
             string colun = "";
+            string Class = textBox_Class.Text;
+            
             foreach (string colr in coluns)
             {
                 var col = colr.Replace(" ", "").Replace("[", "").Replace("]", "").Replace("\n", "");
-                textBox_parameter.Text = textBox_parameter.Text + cmd + ".Parameters.AddWithValue(\"@" + col + "\", " + col + ");\n";
+                textBox_parameter.Text = textBox_parameter.Text + cmd + ".Parameters.AddWithValue(\"@" + col + "\", "+ Class+"." + col + ");\n";
                 textBox_Head.Text = textBox_Head.Text + "string " + col + ", ";
                 update += col + " = @" + col + ", ";
                 values += "@" + col + ", ";
