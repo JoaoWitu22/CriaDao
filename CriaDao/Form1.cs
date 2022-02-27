@@ -22,9 +22,10 @@ namespace CriaDao
                 var col = colr.Replace(" ", "").Replace("[", "").Replace("]", "").Replace("\n", "");
                 textBox_parameter.Text = textBox_parameter.Text + cmd + ".Parameters.AddWithValue(\"@" + col + "\", " + col + ");\n";
                 textBox_Head.Text = textBox_Head.Text + "string " + col + ", ";
-                update += col + " = @" + col + ",\n";
+                update += col + " = @" + col + ", ";
                 values += "@" + col + ", ";
                 colun += col + ", ";
+                textBox_reader.Text += "Convert.ToString(reader[\"" + col + "\"]);\n";
             }
             update += " WHERE xxxxxxxxxxxx";
             insert += colun + ") VALUES (" + values + ")";

@@ -43,6 +43,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox_table = new System.Windows.Forms.TextBox();
+            this.Reader = new System.Windows.Forms.Label();
+            this.textBox_reader = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxColuns
@@ -172,11 +174,30 @@
             this.textBox_table.Size = new System.Drawing.Size(107, 23);
             this.textBox_table.TabIndex = 13;
             // 
+            // Reader
+            // 
+            this.Reader.AutoSize = true;
+            this.Reader.Location = new System.Drawing.Point(1080, 9);
+            this.Reader.Name = "Reader";
+            this.Reader.Size = new System.Drawing.Size(43, 15);
+            this.Reader.TabIndex = 16;
+            this.Reader.Text = "Reader";
+            // 
+            // textBox_reader
+            // 
+            this.textBox_reader.Location = new System.Drawing.Point(1079, 27);
+            this.textBox_reader.Multiline = true;
+            this.textBox_reader.Name = "textBox_reader";
+            this.textBox_reader.Size = new System.Drawing.Size(225, 372);
+            this.textBox_reader.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 453);
+            this.ClientSize = new System.Drawing.Size(1308, 453);
+            this.Controls.Add(this.Reader);
+            this.Controls.Add(this.textBox_reader);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox_table);
             this.Controls.Add(this.label6);
@@ -216,5 +237,7 @@
         private Label label6;
         private Label label7;
         private TextBox textBox_table;
+        private Label Reader;
+        private TextBox textBox_reader;
     }
 }
