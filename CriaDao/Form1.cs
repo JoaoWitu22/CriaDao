@@ -27,7 +27,7 @@ namespace CriaDao
                 update += col + " = @" + col + ", ";
                 values += "@" + col + ", ";
                 colun += col + ", ";
-                textBox_reader.Text += "Convert.ToString(reader[\"" + col + "\"]);\n";
+                textBox_reader.Text += "Convert.ToString(reader[\"" + col + "\"]),\n";
             }
             update += " WHERE xxxxxxxxxxxx";
             insert += colun + ") VALUES (" + values + ")";
